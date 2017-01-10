@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<script src="https://use.fontawesome.com/c4162de030.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<meta charset="utf-8">
+		<title>Find your location!</title>
+	</head>
+	<link rel="shortcut icon" href="favicon.ico"/>
+<body>
+
+<div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+	<h1 class="active">Location Finder&nbsp;&nbsp;<i class="fa fa-map-pin" aria-hidden="true"><span class="sr-only">(current)</span></i></h1>
+	<br>
+
+	<input class="form-control" type='text' id='location'><br><button class="btn btn-primary" onclick="findLocation()">Find location</button>
+	<br>
+	<br>
+	<p id='address'>Address: </p>
+	<p id='lat'>Lattitude: </p>
+	<p id='lng'>Longitude: </p>
+	<p id='civil'>Sunrise: </p>
+	<p id='civilsunset'>Sunset </p>
+	<p id='callingcode'>Calling Code: </p>
+	<br>
+	<br>
+		</div>
+
+	</div>
+
+</div>
+
+
+	<style type="text/css">
+  html, body { height: 100%; margin: 0; padding: 0; background-size: cover; background-image: url("bg.jpeg"); }
+  #map { height: 100%; }
+
+
+
+  .container{
+
+font-family: Gilroy;
+font-size: 22px;
+color: white;
+  }
+
+
+h1 i{
+
+color: #fff;
+
+}
+
+  .form-control{
+
+max-width: 40%;
+
+  }
+
+  #map{
+
+
+max-width: 100%;
+max-height: 500px;
+margin-left: 5%; 
+margin-right:5%;
+margin-bottom: 5%;
+
+  }
+
+
+
+
+
+</style>
+
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKO3RaQtlLnDKVgIBULSu5PBcK3mcTzWU&callback=initMap"
+    async defer></script>
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
