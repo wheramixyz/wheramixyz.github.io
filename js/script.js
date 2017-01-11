@@ -121,10 +121,18 @@ function convertTimestamp(timestamp) {
                               'Error: The Geolocation service failed.' :
                               'Error: Your browser doesn\'t support geolocation.');
       }
-    </script>
+    
            
         }
 
+
+document.getElementById("location")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        document.getElementById("button1").click();
+    }
+});
 
 /* TODO 
 
